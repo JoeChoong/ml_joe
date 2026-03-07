@@ -1,1 +1,502 @@
-
+[{
+	"categorys": [{
+		"categoryCode": "Leadership",
+		"categoryScore": 6.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0027_ANS0001",
+				"score": 2.0,
+				"text": "Organiser, actively arrange the event"
+			}],
+			"questionCode": "QUE0027",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0028_ANS0001",
+				"score": 0.0,
+				"text": "Encourage him and recognise his efforts"
+			}],
+			"questionCode": "QUE0028",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0026_ANS0001",
+				"score": 2.0,
+				"text": "I want to be recognised by others, gather the team to achieve the same goal"
+			}],
+			"questionCode": "QUE0026",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0025_ANS0001",
+				"score": 2.0,
+				"text": "Seek common ground and try to convince others to stand with me "
+			}],
+			"questionCode": "QUE0025",
+			"questionScore": 2.0
+		}]
+	}, {
+		"categoryCode": "Network Resources",
+		"categoryScore": 4.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "BQUE0014_BANS0001",
+				"score": 0.5,
+				"text": "Social circle located in the same state/province."
+			}],
+			"questionCode": "BQUE0014",
+			"questionScore": 0.5
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0015_BANS0001",
+				"score": 1.0,
+				"text": "Independence"
+			}],
+			"questionCode": "BQUE0015",
+			"questionScore": 1.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0016_BANS0001",
+				"score": 1.5,
+				"text": "Below 20"
+			}],
+			"questionCode": "BQUE0016",
+			"questionScore": 1.0
+		}]
+	}, {
+		"categoryCode": "Others",
+		"categoryScore": 0.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "BQUE0009_BANS0001",
+				"text": "Yes, and I have claims experience"
+			}],
+			"questionCode": "BQUE0009",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0010_BANS0001",
+				"text": "Yes, and they are close with me"
+			}],
+			"questionCode": "BQUE0010",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0001_BANS0001",
+				"text": "Master's Degree or above"
+			}],
+			"questionCode": "BQUE0001",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0002_BANS0001",
+				"text": "Economics & Finance"
+			}, {
+				"answerCode": "BQUE0002_BANS0002",
+				"text": "Business Administration"
+			}, {
+				"answerCode": "BQUE0002_BANS0003",
+				"text": "Social Sciences"
+			}],
+			"questionCode": "BQUE0002",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0003_BANS0001",
+				"text": "Insurance"
+			}, {
+				"answerCode": "BQUE0003_BANS0002",
+				"text": "Banking / Financial Services"
+			}],
+			"questionCode": "BQUE0003",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0004_BANS0001",
+				"text": "No full-time experience (e.g. incoming graduate)"
+			}],
+			"questionCode": "BQUE0004",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0005_BANS0001",
+				"text": "No full-time experience (e.g. incoming graduate)"
+			}],
+			"questionCode": "BQUE0005",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0007_BANS0001",
+				"currencySymbol": "RM",
+				"currencyValue": "<=3,000",
+				"text": "Less than RM 3,000"
+			}],
+			"questionCode": "BQUE0007",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0006_BANS0001",
+				"currencySymbol": "RM",
+				"currencyValue": "<=30,000",
+				"text": "Less than RM 30,000"
+			}],
+			"questionCode": "BQUE0006",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0008_BANS0001",
+				"text": "Cash and Bank Accounts (Savings, FDs)"
+			}],
+			"questionCode": "BQUE0008",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0011_BANS0001",
+				"text": "Fewer than 100"
+			}],
+			"questionCode": "BQUE0011",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0012_BANS0001",
+				"text": "Schoolmates"
+			}],
+			"questionCode": "BQUE0012",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "BQUE0013_BANS0001",
+				"text": "Daily"
+			}, {
+				"answerCode": "BQUE0013_BANS0002",
+				"text": "Weekly"
+			}, {
+				"answerCode": "BQUE0013_BANS0003",
+				"text": "Monthly"
+			}],
+			"questionCode": "BQUE0013",
+			"questionScore": 0.0
+		}]
+	}, {
+		"categoryCode": "Self-conscientiousness",
+		"categoryScore": 6.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0004_ANS0001",
+				"score": 2.0,
+				"text": "Always strictly stay within budget and never overspend"
+			}],
+			"questionCode": "QUE0004",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0006_ANS0001",
+				"score": 2.0,
+				"text": "Contact the previous company myself to fight for the offer, to realise what I promised"
+			}],
+			"questionCode": "QUE0006",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0001_ANS0001",
+				"score": 1.0,
+				"text": "In order to maintain family and personal needs, career development should come first"
+			}],
+			"questionCode": "QUE0001",
+			"questionScore": 1.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0003_ANS0001",
+				"score": 1.0,
+				"text": "Not share any client information, but only introduce the friend's company to my clients who are interested"
+			}],
+			"questionCode": "QUE0003",
+			"questionScore": 1.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0002_ANS0003",
+				"score": 0.0,
+				"text": "First finish the arranged tasks, try my best to prepare for the meeting in the remaining time"
+			}],
+			"questionCode": "QUE0002",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0005_ANS0003",
+				"score": 0.0,
+				"text": "I have already tried my best to remind him, there is nothing else I can do if he does not listen to me"
+			}],
+			"questionCode": "QUE0005",
+			"questionScore": 0.0
+		}]
+	}, {
+		"categoryCode": "Curiosity",
+		"categoryScore": 3.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0009_ANS0001",
+				"score": 0.0,
+				"text": "Deep dive to learn the topics that I am interested in"
+			}],
+			"questionCode": "QUE0009",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0007_ANS0003",
+				"score": 0.0,
+				"text": "I learn by mandatory courses offered by company "
+			}],
+			"questionCode": "QUE0007",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0011_ANS0002",
+				"score": 1.0,
+				"text": "Ask for more details about the task before deciding"
+			}],
+			"questionCode": "QUE0011",
+			"questionScore": 1.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0008_ANS0003",
+				"score": 0.0,
+				"text": "The decision has already been made, there is no need to go deep into it"
+			}],
+			"questionCode": "QUE0008",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0010_ANS0001",
+				"score": 2.0,
+				"text": "Go watch the movie so I can join the discussion among friends"
+			}],
+			"questionCode": "QUE0010",
+			"questionScore": 2.0
+		}]
+	}, {
+		"categoryCode": "Compliance Awareness",
+		"categoryScore": 4.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0035_ANS0002",
+				"score": 2.0,
+				"text": "Express your gratitude and further ask the client to obtain proper consents from the business partners before accepting the business cards"
+			}],
+			"questionCode": "QUE0035",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0034_ANS0003",
+				"score": 2.0,
+				"text": "Report to my manager because there should be something not quite right"
+			}],
+			"questionCode": "QUE0034",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0036_ANS0001",
+				"score": 0.0,
+				"text": "Accede to the client's request and not disclose the illness in the application forms"
+			}],
+			"questionCode": "QUE0036",
+			"questionScore": 0.0
+		}]
+	}, {
+		"categoryCode": "Cognitive ability",
+		"categoryScore": 4.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0037_ANS0003",
+				"score": 2.0,
+				"text": "16 years old"
+			}],
+			"questionCode": "QUE0037",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0040_ANS0003",
+				"score": 0.0,
+				"text": "6 days"
+			}],
+			"questionCode": "QUE0040",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0038_ANS0003",
+				"score": 2.0,
+				"text": "113"
+			}],
+			"questionCode": "QUE0038",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0039_ANS0002",
+				"score": 0.0,
+				"text": "B"
+			}],
+			"questionCode": "QUE0039",
+			"questionScore": 0.0
+		}]
+	}, {
+		"categoryCode": "Adaptability",
+		"categoryScore": 6.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0021_ANS0001",
+				"score": 2.0,
+				"text": "Feel a little nervous, but calm down very quickly and get into my best state"
+			}],
+			"questionCode": "QUE0021",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0022_ANS0002",
+				"score": 0.0,
+				"text": "Feel disappointed and go home"
+			}],
+			"questionCode": "QUE0022",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0019_ANS0001",
+				"score": 2.0,
+				"text": "Have no insomnia, not feel much difference from staying at home"
+			}],
+			"questionCode": "QUE0019",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0020_ANS0002",
+				"score": 2.0,
+				"text": "Grab lunch with the colleagues to blend into the team"
+			}],
+			"questionCode": "QUE0020",
+			"questionScore": 2.0
+		}]
+	}, {
+		"categoryCode": "Sociability",
+		"categoryScore": 3.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0017_ANS0002",
+				"score": 2.0,
+				"text": "Ask my friend out to recommend itinerary, offer to help contact local driver and B&B"
+			}],
+			"questionCode": "QUE0017",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0024_ANS0003",
+				"score": 0.0,
+				"text": "Just go with the flow and avoid catching too much attention"
+			}],
+			"questionCode": "QUE0024",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0018_ANS0003",
+				"score": 0.0,
+				"text": "Reply thank you after receiving messages from others"
+			}],
+			"questionCode": "QUE0018",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0023_ANS0002",
+				"score": 1.0,
+				"text": "Get to know new friends through introduction from colleagues"
+			}],
+			"questionCode": "QUE0023",
+			"questionScore": 1.0
+		}]
+	}, {
+		"categoryCode": "Ambition",
+		"categoryScore": 7.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0014_ANS0003",
+				"score": 0.0,
+				"text": "I am satisfied with my ways of life and do not care much about how others view me"
+			}],
+			"questionCode": "QUE0014",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0012_ANS0003",
+				"score": 2.0,
+				"text": "Have my own team of 100 members"
+			}],
+			"questionCode": "QUE0012",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0015_ANS0001",
+				"score": 2.0,
+				"text": "Take it, compliment is one of the greatest motivations for me to be successful"
+			}],
+			"questionCode": "QUE0015",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0016_ANS0002",
+				"score": 2.0,
+				"text": "Keep my eye on the goals, work my best to achieve them"
+			}],
+			"questionCode": "QUE0016",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0013_ANS0003",
+				"score": 1.0,
+				"text": "Live my days and enjoy my life - resting is as essential as setting and realising goals"
+			}],
+			"questionCode": "QUE0013",
+			"questionScore": 1.0
+		}]
+	}, {
+		"categoryCode": "Resilience",
+		"categoryScore": 5.0,
+		"questionItems": [{
+			"answerItems": [{
+				"answerCode": "QUE0030_ANS0003",
+				"score": 0.0,
+				"text": "Give up on this client, maybe he is not for me"
+			}],
+			"questionCode": "QUE0030",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0029_ANS0003",
+				"score": 0.0,
+				"text": "Keep trying, give myself another chance"
+			}],
+			"questionCode": "QUE0029",
+			"questionScore": 0.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0032_ANS0003",
+				"score": 1.0,
+				"text": "Shift my focus to other goals first, try again when I am in a better state"
+			}],
+			"questionCode": "QUE0032",
+			"questionScore": 1.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0033_ANS0001",
+				"score": 2.0,
+				"text": "I am confident about my ability, I can go into the state easily"
+			}],
+			"questionCode": "QUE0033",
+			"questionScore": 2.0
+		}, {
+			"answerItems": [{
+				"answerCode": "QUE0031_ANS0001",
+				"score": 2.0,
+				"text": "Accept the criticism humbly, and welcome any other feedbacks in the future"
+			}],
+			"questionCode": "QUE0031",
+			"questionScore": 2.0
+		}]
+	}],
+	"id": "0522cdd6-662b-481f-bfc8-c635569f59f2"
+}]
