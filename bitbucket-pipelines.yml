@@ -1,0 +1,78 @@
+image: mcr.microsoft.com/azure-cli:2.61.0
+
+options:
+  docker: true
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: Validate build
+          services:
+            - docker
+          caches:
+            - docker
+          script:
+            - echo "Building scoring image for validation"
+            - export IMAGE_TAG="pr-${BITBUCKET_PR_ID}-${BITBUCKET_BUILD_NUMBER}"
+            - docker build -t local/${IMAGE_REPOSITORY}:${IMAGE_TAG} .
+
+  branches:
+    main:
+      - step:
+          name: Build, push, and deploy to AKS
+          services:
+            - docker
+          caches:
+            - docker
+          script:
+            - set -euo pipefail
+            - apt-get update && apt-get install -y gettext-base curl jq
+            - az login --service-principal -u "$AZURE_CLIENT_ID" -p "$AZURE_CLIENT_SECRET" --tenant "$AZURE_TENANT_ID"
+            - az account set --subscription "$AZURE_SUBSCRIPTION_ID"
+            - az aks install-cli
+            - az acr login --name "$ACR_NAME"
+            - |
+              if [ -n "${MODEL_STORAGE_ACCOUNT:-}" ] && [ -n "${MODEL_STORAGE_CONTAINER:-}" ] && [ -n "${MODEL_BLOB_NAME:-}" ]; then
+                echo "Downloading model artifact from Azure Blob Storage"
+                mkdir -p model
+                az storage blob download \
+                  --auth-mode login \
+                  --account-name "$MODEL_STORAGE_ACCOUNT" \
+                  --container-name "$MODEL_STORAGE_CONTAINER" \
+                  --name "$MODEL_BLOB_NAME" \
+                  --file model/model.pkl \
+                  --overwrite
+              else
+                echo "Blob model variables not set; expecting model/model.pkl already present in repo"
+              fi
+            - test -f model/model.pkl
+            - export IMAGE_TAG="${BITBUCKET_COMMIT:0:7}-${BITBUCKET_BUILD_NUMBER}"
+            - export IMAGE_NAME="${ACR_NAME}.azurecr.io/${IMAGE_REPOSITORY}:${IMAGE_TAG}"
+            - docker build -t "$IMAGE_NAME" .
+            - docker push "$IMAGE_NAME"
+            - az aks get-credentials --resource-group "$AKS_RESOURCE_GROUP" --name "$AKS_CLUSTER_NAME" --overwrite-existing
+            - kubectl create namespace "$K8S_NAMESPACE" --dry-run=client -o yaml | kubectl apply -f -
+            - mkdir -p rendered
+            - export IMAGE_URI="$IMAGE_NAME"
+            - envsubst < k8s/deployment.yaml > rendered/deployment.yaml
+            - envsubst < k8s/service.yaml > rendered/service.yaml
+            - envsubst < k8s/ingress.yaml > rendered/ingress.yaml
+            - kubectl apply -n "$K8S_NAMESPACE" -f rendered/deployment.yaml
+            - kubectl apply -n "$K8S_NAMESPACE" -f rendered/service.yaml
+            - kubectl apply -n "$K8S_NAMESPACE" -f rendered/ingress.yaml
+            - kubectl rollout status deploy/${APP_NAME} -n "$K8S_NAMESPACE" --timeout=300s
+            - kubectl port-forward -n "$K8S_NAMESPACE" svc/${APP_NAME}-svc 18080:80 >/tmp/port-forward.log 2>&1 &
+            - export PF_PID=$!
+            - trap "kill $PF_PID" EXIT
+            - sleep 8
+            - curl -fsS http://127.0.0.1:18080/health | tee /tmp/health.json
+            - jq -e '.status == "ok" and .model_loaded == true' /tmp/health.json
+            - export SCORE_PAYLOAD="${SCORE_TEST_PAYLOAD:-{\"instances\":[[0.0]]}}"
+            - echo "$SCORE_PAYLOAD" | curl -fsS -X POST http://127.0.0.1:18080/score -H "Content-Type: application/json" -d @- | tee /tmp/score.json
+            - jq -e 'has("predictions") and (.predictions | type == "array")' /tmp/score.json
+
+definitions:
+  services:
+    docker:
+      memory: 3072
